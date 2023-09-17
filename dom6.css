@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgba(255, 255, 0, 0.697);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid rgb(60, 62, 62);
+    overflow: hidden;
+    position: relative;
+    background-color: slategray;
+}
+
+#stories{
+    height: 100px;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 2px solid rgba(183, 183, 230, 0.635);
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.storie{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 5px;
+    background: linear-gradient(rgb(255, 179, 0),red,blue,orange,rgb(255, 192, 207));
+    padding: 3px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+
+
+.storie img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+#stories::-webkit-scrollbar{
+    display: none;
+}
+
+#c-storie{
+    height: 400px;
+    width: 250px;
+    background-color: rgb(237, 111, 111);
+    display: none;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: end;
+    transform: scale(1);
+    transition: transform ease 1s;
+}
+
+#c-storie img{
+    height: 100%;
+    width: 100%;
+}
+
+#username{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    margin: 5px;
+    overflow: hidden;
+
+}
+
+#username img{
+    height: 100%;
+    width: 100%;
+}
+
+#username1{
+    position: absolute;
+    top: 0;
+    left: 40px;
+    margin: 20px;
+}
+
+#sendmessage{
+    height: 35px;
+    width: 70%;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 5px;
+    font-size: 25px;
+    resize: none;
+}
+
+#sendmessage::placeholder{
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    font-size: 20px;
+}
+
+#sendmessage::-webkit-scrollbar{
+    display: none;
+}
+
+#like-storie{
+    height: 40px;
+    width: 10px;
+    position: absolute;
+    left: 190px;
+}
+
+#share-storie{
+    height: 40px;
+    width: 10px;
+    position: absolute;
+    left: 220px;
+}
+
+#close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
